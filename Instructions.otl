@@ -1,0 +1,225 @@
+0
+0
+Instructions for Using Outline Editor
+1
+1
+Overview
+2
+1
+Outline Editor allows you to create outlines, that is, nested hierarchies of topics that can be copied, moved, and deleted
+2
+2
+Outline Editor is written in Java, so it will run on both Windows and MacIntosh computers
+1
+2
+Unpacking and Running Outline Editor
+2
+1
+if you've gotten this far, you've already unzipped all the necessary files into a single folder on your computer
+3
+1
+a configuration file outline.cfg will be written to this directory to remember recently opened outlines
+2
+2
+once the files are unpacked, the source code needs to be compiled
+3
+1
+do this by typing "javac Outline*.java" at the command line
+4
+1
+(this assumes, of course, that you have downloaded and installed the java compiler)
+2
+3
+start Outline Editor by typing "java Outline" at the command line
+3
+1
+you will see a window with "New Outline" loaded
+3
+2
+this outline has the file name "new.otl" and consists only of the title, "New Outline"
+3
+3
+you may change the title by clicking on it and using the editing box at lower left
+2
+4
+you can start to enter new outline entries by typing
+3
+1
+and then hitting "Enter" or a carriage return
+1
+3
+Family Values
+2
+1
+outlines are organized around families
+3
+1
+that is, a topic outline entry plus topics subordinated to it
+3
+2
+which are its children
+3
+3
+outline entries have ranks from 0 to 99
+4
+1
+0 being the highest, and reserved for the outline title
+3
+4
+outline entries at the same rank are called siblings
+4
+1
+so this is a child of the previous entry
+3
+5
+and this is a sibling of III.A.4
+2
+2
+When you select an outline entry with the cursor, it appears in blue
+3
+1
+and all of the nested children of that heading appear in red
+3
+2
+try selecting heading III.B above and you will see the effect
+2
+3
+You manipulate the outline by copying, deleting, or moving families
+3
+1
+this, for example, is a subhead of the C) level heading
+4
+1
+and this is a further subhead
+5
+1
+and so on...
+6
+1
+and so on...
+3
+2
+if you promote or demote a heading, you promote or demote all of its children as well
+3
+3
+to move a family, delete it and insert it at a new point
+1
+4
+Manipulating Outlines
+2
+1
+new outline entries
+3
+1
+if you click on an entry and start typing, you will create a new outline entry
+4
+1
+your typing will appear in the new entry box at lower right
+3
+2
+if you hit "Enter" or a carriage return, the new entry will be inserted below the current outline entry
+4
+1
+you can raise the rank of the entry by clicking the "Promote" button or ctrl-e
+2
+2
+modifying an outline entry
+3
+1
+any outline entry can be edited
+3
+2
+simply click on it and it appears in the editing box at lower left
+4
+1
+edit the line, then click on the "Modify" button
+3
+3
+if you split the line by hitting  "Enter" or carriage return, it will be inserted as two entries
+4
+1
+with the second line a child of the first
+3
+4
+you cannot split the entry more than once
+3
+5
+you can edit the entry using the usual copy, cut, and insert shortcuts
+4
+1
+i.e., ctrl-c, ctrl-x, ctrl-v
+2
+3
+copying and deleting
+3
+1
+when you select a heading and its children, you can copy or delete it
+4
+1
+any entry or family that is copied or deleted is saved to the clipboard
+3
+2
+if you want to see what is currently in the clipboard, go to the Options menu
+4
+1
+then select "Dump Clipboard"
+4
+2
+this is not, by the way, the Windows clipboard, but a clipboard for outline entries only
+2
+4
+Inserting
+3
+1
+whatever is in the clipboard will be inserted below the highlighted entry, demoted by one level
+4
+1
+if you want to promote it to the same level as the selected entry, just hit "Promote"
+5
+1
+or ctrl-e on the keyboard
+2
+5
+promoting
+3
+1
+promote a family by clicking the "Promote" button
+4
+1
+or ctrl-e on the keyboard
+3
+2
+when you promote an outline entry, the whole family moves up one rank
+3
+3
+however, if the entry is immediately followed by a sibling(s), the promoted family will appear after the last sibling
+4
+1
+this is necessary because otherwise the remaining siblings will be subordinated to the promoted family
+2
+6
+demoting
+3
+1
+demoting a family is the opposite promoting it
+3
+2
+you demote either with the "Demote" button
+4
+1
+or by typing ctrl-r
+3
+3
+you cannot demote an entry more than one rank below its parent
+1
+5
+Getting the outline into Microsoft Word
+2
+1
+for final formatting and printing, you need to save a special .txt file and open it in Word
+3
+1
+go to the File menu, and select "Print .txt file"
+3
+2
+you will also need to add a macro to Word that will automatically format this .txt file
